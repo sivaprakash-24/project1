@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading {
+    font-size: 55px;
+    text-align: center;
+}
+
+.nav {
+    height: 80px;
+    background-color: #4238c9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 15px;
+}
+
+.nav .nav-left {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.nav .nav-center ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav .nav-center ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav .nav-right {
+    display: none;
+}
+
+@media(max-width:992px) {
+    .nav .nav-center {
+        width: 100%;
+        background-color: #4238c9;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .nav .nav-center ul li {
+        display: block;
+        border: 1px solid white;
+        padding: 10px 0;
+        border-radius: 15px;
+        margin: 10px 0;
+    }
+
+    .nav .hide {
+        display: none;
+    }
+
+    .nav .nav-right {
+        display: block;
+    }
+
+    .nav .nav-right button {
+        padding: 5px;
+    }
+}
+
+.container {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+.container .container-left {
+    width: 45%;
+}
+
+.container .container-left p {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.container .container-right {
+    width: 45%;
+}
+
+.container .container-right img {
+    width: 100%;
+}
+
+@media(max-width:992px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container .container-left {
+        width: 85%;
+    }
+
+    .container .container-right {
+        width: 85%;
+    }
+}
+
+.boxes {
+    width: 100%;
+
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+.boxes .box {
+    width: 30%;
+}
+
+.boxes .box img {
+    width: 100%;
+}
+
+@media(max-width:992px) {
+    .boxes {
+        flex-direction: column;
+    }
+
+    .boxes .box {
+        width: 75%;
+    }
+}
+
+.courses {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 10px;
+    place-items: center;
+    gap: 10px;
+}
+
+.course.course {
+    height: 25vmax;
+    width: 25vmax;
+    border: solid;
+}
+
+.course.course1 {
+    background-image: url(css\ course.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.course.course2 {
+    background-image: url(artificial\ intelligence\ course\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.course.course3 {
+    background-image: url(chat\ gpt\ course.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.course.course4 {
+    background-image: url(website\ creation\ course.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.course.course5 {
+    background-image: url(digital\ marketing\ course.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.course.course6 {
+    background-image: url(block\ chain\ course.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media(max-width:992px) {
+    .course {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat (6, 1fr);
+    }
+
+    .course .course {
+        height: 35vmax;
+        width: 35vmax;
+    }
+}
+
+.review {
+    width: 100%;
+    border: solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+
+}
+
+.review .box {
+    width: 30%;
+    border: solid;
+    border-radius: 15px;
+    padding: 10px;
+    transition: all 1s;
+
+}
+
+.review .box:hover {
+    background-color: grey;
+    color: white;
+
+}
+
+.review .box .box-img {
+    width: 100%;
+    border: solid;
+}
+
+.review .box .box-img img {
+    width: 100%;
+}
+
+.review .box .point {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+
+}
+
+.review .box .point .point-left ul li {
+    display: inline;
+}
+
+
+.contact {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+}
+
+.contact .contact-left {
+    width: 45%;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.contact .contact-left .map {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.contact .contact-left .social-media ul li {
+    list-style: none;
+    margin: 10px 0 10px 15px;
+}
+
+.contact .contact-left .social-media ul .fa-brands {
+    margin-right: 15px;
+}
+
+.contact .contact-right {
+    width: 45%;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.contact .contact-right .contact-form {
+    width: 100%;
+    padding: 45px 10px;
+}
+
+.contact .contact-right .contact-form input,
+textarea,
+button {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    border: 1px solid grey;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.contact .contact-right .contact-form button {
+    background-color: #4238c9;
+    color: white;
+}
+
+
+@media(max-width:992px) {
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact .contact-left {
+        width: 85%;
+    }
+
+    .contact .contact-right {
+        width: 85%;
+    }
+}
+
+.courses {
+    width: 100;
+}
